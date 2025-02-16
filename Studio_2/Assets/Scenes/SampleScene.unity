@@ -1035,6 +1035,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &765918458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 765918459}
+  m_Layer: 0
+  m_Name: PinAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &765918459
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765918458}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.17, z: 42.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &781615540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,6 +1155,9 @@ MonoBehaviour:
   OnMove:
     m_PersistentCalls:
       m_Calls: []
+  OnResetPressed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &824759509
 Transform:
   m_ObjectHideFlags: 0
@@ -1152,6 +1186,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  ball: {fileID: 428955015}
+  pinCollection: {fileID: 1893849494}
+  pinAnchor: {fileID: 765918459}
+  inputManager: {fileID: 824759508}
   scoreText: {fileID: 1503929711}
 --- !u!1 &832575517
 GameObject:
@@ -1979,6 +2017,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1875974182}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1893849494 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 711811256595726535, guid: 4d2da2b11677230449cb9bf42a68a5ed, type: 3}
+  m_PrefabInstance: {fileID: 5343835068584564542}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5343835068584564542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1993,7 +2036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 740252888570787205, guid: 4d2da2b11677230449cb9bf42a68a5ed, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 12.36
       objectReference: {fileID: 0}
     - target: {fileID: 740252888570787205, guid: 4d2da2b11677230449cb9bf42a68a5ed, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2063,3 +2106,4 @@ SceneRoots:
   - {fileID: 781615542}
   - {fileID: 1535664821}
   - {fileID: 716106126}
+  - {fileID: 765918459}
